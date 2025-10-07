@@ -1,1 +1,76 @@
-<html></html>
+{% extends "layout.html" %}
+
+{% block body %}
+    <!-- NAVBAR -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation Bar">
+
+        <!-- Nav Branding -->
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <!-- Put in path to image -->
+                 <div clas="logo">
+                    <span class="h">H</span>
+                    <span class="w">W</span>
+                    <span class="slash"></span>
+                 </div>
+            </a>
+        </div>
+
+        <!-- Nav Items -->
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">Home</a>
+                <a class="navbar-item">Broadcasting</a>
+                <a class="navbar-item">Programming</a>
+                <a class="navbar-item">Web Design</a>
+                <a class="navbar-item">Life Story</a>
+                <a class="navbar-item">Education</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Title Section -->
+    <div class="container">
+
+        <!-- Picture + Title -->
+        <div class="card">
+            <div class="card-image">
+                <!-- Add image -->
+            </div>
+            <div class="card-content">
+                <!-- NAME-->
+                 <h1 class="title-1">HAYDEN WARFIELD</h1>
+            </div>
+        </div>
+
+        <!-- Tabs for Different Projects TBD -->
+        <div class="tabs is-centered is-boxed is-medium">
+            <ul>
+                <li class="is-active">
+                    <a>
+                        <span>Pictures</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span>Music</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span>Videos</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span>Documents</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Qualifications -->
+{% endblock %}

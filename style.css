@@ -1,0 +1,11 @@
+body {
+    display: flex;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 120px;
+    position: relative;
+    color: black;
+    letter-spacing: -10px;
+}
