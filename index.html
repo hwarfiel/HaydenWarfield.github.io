@@ -1,6 +1,18 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Style Links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Hayden Warfield</title>
 
-{% block body %}
+    <!--Style/JS links-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
     <!-- NAVBAR -->
     <nav class="navbar" role="navigation" aria-label="Main Navigation Bar">
 
@@ -8,11 +20,11 @@
         <div class="navbar-brand">
             <a class="navbar-item">
                 <!-- Put in path to image -->
-                 <div clas="logo">
+                    <div clas="logo">
                     <span class="h">H</span>
                     <span class="w">W</span>
                     <span class="slash"></span>
-                 </div>
+                    </div>
             </a>
         </div>
 
@@ -23,7 +35,6 @@
                 <a class="navbar-item">Broadcasting</a>
                 <a class="navbar-item">Programming</a>
                 <a class="navbar-item">Web Design</a>
-                <a class="navbar-item">About Me</a>
             </div>
         </div>
 
@@ -36,14 +47,79 @@
         <div class="card">
             <div class="card-image">
                 <!-- Add image -->
-                 <figure class="image">
+                    <figure class="image">
                     <img class="is-rounded" src="/static/Hayden_fullshot.JPG"/>
-                 </figure>
+                    </figure>
             </div>
         </div>
 
         <h1 class="title is-1">Hayden Warfield</h1>
-        <h2 class="title is-2">Epic, Awesome, and Slighty More Awesome</h2>
+        <h2 class="title is-2">Indubilitly Epic</h2>
+
+        <p>Hi I'm Hayden. I'm an energetic and creative man who loves solving problems.</p>
 
     </div>
-{% endblock %}
+
+    <!-- Skills -->
+    <div class="container">
+
+        <div class="carousel">
+            <!-- Python -->
+            <div class="card">
+                <figure class="image is-96x96">
+                    <img src="/static/language_logos/Python.svg"/>
+                </figure>
+            </div>
+
+            <!-- C++ -->
+            <div class="card">
+                <figure class="image is-96x96">
+                    <img src="/static/language_logos/CPlusPlus.svg"/>
+                </figure>
+            </div>
+
+            <!-- HTML -->
+            <div class="card">
+                <figure class="image is-96x96">
+                    <img src="/static/language_logos/HTML5.svg.png"/>
+                </figure>
+            </div>
+
+            <!-- CSS -->
+            <div class="card">
+                <figure class="image is-96x96">
+                    <img src="/static/language_logos/css.svg"/>
+                </figure>
+            </div>
+
+            <!-- JavaScript -->
+                <div class="card">
+                <figure class="image is-96x96">
+                    <img src="/static/language_logos/JS.svg"/>
+                </figure>
+            </div>
+            
+            <!-- Ocaml -->
+            <div class="card">
+                <figure class="image is-96x96">
+                    <img src="/static/language_logos/OCaml.svg"/>
+                </figure>
+            </div>
+
+            <!-- Java -->
+            <div class="card">
+                <figure class="image is-96x96">
+                    <img src="/static/language_logos/Java.svg"/>
+                </figure>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>hwarfiel@iwu.edu</p>
+        <p>217-722-9846</p>
+    </footer>
+
+</body>
+</html>
