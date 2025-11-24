@@ -1,0 +1,72 @@
+@import "carousel.css";
+
+.carousel {
+    width: 90%;
+    overflow-x: auto;
+    margin: 3em auto;
+    display: flex;
+    gap: 1em;
+    scroll-behavior: smooth;
+    anchor-name: --carousel;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+}
+
+.carousel::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+
+.carousel-slide::scroll-marker {
+    content: '';
+    height: 1em;
+    width: 1em;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.carousel-slide::scroll-marker::target-current {
+    background-color: var(--primary-color);
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel::-webkit-scrollbar-button(left), .carousel::-webkit-scrollbar-button(right) {
+    content: "<-";
+    border: none;
+    font-size: 3em;
+    color: var(--primary-color);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --carousel;
+    position-area: right center;
+    translate: 50%;
+}
+
+.carousel::-webkit-scrollbar-button(right) {
+    content: "->";
+    position-area: left center;
+    translate: -50%;
+}
+
+.carousel-slide {
+    scroll-snap-align: start;
+    flex: 0 0 10em;
+    height: 12em;
+    padding: 1em;
+    text-align: center;
+    align-content: center
+}
+
+@media(max-width: 500px) {
+    .carousel-slide {
+        flex: 0 0 100%;
+    }
+}

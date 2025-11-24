@@ -9,8 +9,6 @@
 
     <!--Style/JS links-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    {% block head %}
-    {% endblock %}
 </head>
 <body>
     <!-- NAVBAR -->
@@ -20,11 +18,9 @@
         <div class="navbar-brand">
             <a class="navbar-item">
                 <!-- Put in path to image -->
-                    <div clas="logo">
-                    <span class="h">H</span>
-                    <span class="w">W</span>
-                    <span class="slash"></span>
-                    </div>
+                <div clas="logo">
+              
+                </div>
             </a>
         </div>
 
@@ -47,8 +43,8 @@
         <div class="card">
             <div class="card-image">
                 <!-- Add image -->
-                    <figure class="image">
-                    <img class="is-rounded" src="/static/Hayden_fullshot.JPG"/>
+                    <figure class="image is-128x128">
+                        <img class="is-rounded" src="/static/Hayden_fullshot.JPG"/>
                     </figure>
             </div>
         </div>
@@ -63,62 +59,55 @@
     <!-- Skills -->
     <div class="container">
 
+        <h1 class="is-size-1">Programming</h1>
+
         <div class="carousel">
             <!-- Python -->
-            <div class="card">
-                <figure class="image is-96x96">
-                    <img src="/static/language_logos/Python.svg"/>
-                </figure>
-            </div>
-
+            <figure class="image is-96x96">
+                <img class="carousel-slide" src="/static/language_logos/Python.svg" alt="Python-Logo"/>
+            </figure>
+              
             <!-- C++ -->
-            <div class="card">
-                <figure class="image is-96x96">
-                    <img src="/static/language_logos/CPlusPlus.svg"/>
-                </figure>
-            </div>
+            <figure class="image is-96x96">
+                <img  class="carousel-slide" src="/static/language_logos/CPlusPlus.svg" alt="C++-Logo"/>
+            </figure>
 
             <!-- HTML -->
-            <div class="card">
-                <figure class="image is-96x96">
-                    <img src="/static/language_logos/HTML5.svg.png"/>
-                </figure>
-            </div>
+            <figure class="image is-96x96">
+                <img class="carousel-slide" src="/static/language_logos/HTML5.svg.png" alt="HTML-Logo"/>
+            </figure>
 
             <!-- CSS -->
-            <div class="card">
-                <figure class="image is-96x96">
-                    <img src="/static/language_logos/css.svg"/>
-                </figure>
-            </div>
+            <figure class="image is-96x96">
+                <img class="carousel-slide" src="/static/language_logos/css.svg" alt="CSS-Logo"/>
+            </figure>
 
             <!-- JavaScript -->
-                <div class="card">
-                <figure class="image is-96x96">
-                    <img src="/static/language_logos/JS.svg"/>
-                </figure>
-            </div>
+            <figure class="image is-96x96">
+                <img class="carousel-slide" src="/static/language_logos/JS.svg" alt="JavaScript-Logo"/>
+            </figure>
             
             <!-- Ocaml -->
-            <div class="card">
-                <figure class="image is-96x96">
-                    <img src="/static/language_logos/OCaml.svg"/>
-                </figure>
-            </div>
+            <figure class="image is-96x96">
+                <img class="carousel-slide" src="/static/language_logos/OCaml.svg" alt="OCaml-Logo"/>
+            </figure>
 
             <!-- Java -->
-            <div class="card">
-                <figure class="image is-96x96">
-                    <img src="/static/language_logos/Java.svg"/>
-                </figure>
-            </div>
+            <figure class="image is-96x96">
+                <img class="carousel-slide" src="/static/language_logos/Java.svg" alt="Java-Logo"/>
+            </figure>
+        
         </div>
 
     </div>
 
-    <footer>
-        <p>hwarfiel@iwu.edu</p>
-        <p>217-722-9846</p>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+            <strong>hwarfiel@iwu.edu</strong>
+            217-722-9846
+            </p>
+        </div>
     </footer>
 
 </body>
